@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -166,6 +167,13 @@ button {
     margin-left: 12px;
     border: none;
     cursor: pointer;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #10AC84;
+    border: 1px solid #EE5253;
 }
 
 footer {
