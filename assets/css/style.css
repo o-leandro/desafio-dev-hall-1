@@ -16,7 +16,7 @@ header {
 .logo {
     color: #fff;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2.25rem;
     text-decoration: none;
     margin-left: 27px;
 }
@@ -50,14 +50,14 @@ main {
 
 main p {
     color: #fff;
-    font-size: 30px;
+    font-size: 1.87rem;
     margin-left: 59px;
     margin-top: 292px;
 }
 
 main h1 {
     color: #fff;
-    font-size: 80px;
+    font-size: 5rem;
     margin-left: 59px;
 }
 
@@ -84,7 +84,7 @@ main h1 {
 }
 
 .titulo {
-    font-size: 50px;
+    font-size: 3.125rem;
     margin-top: 86px;
     margin-left: 235px;
     margin-bottom: 41px; 
@@ -93,7 +93,7 @@ main h1 {
 }
 
 .descricao {
-    font-size: 19px;
+    font-size: 1.187rem;
     margin-left: 235px;
     grid-column: 1;
     grid-row: 2;
@@ -101,7 +101,7 @@ main h1 {
 
 .rapaz {
     grid-column: 2;
-   max-width: 100%;
+    max-width: 100%;
     margin-top: 41px;
     margin-left: 76px;
 }
@@ -117,13 +117,13 @@ main h1 {
 }
 
 .titulo-contato {
-    font-size: 50px;
+    font-size: 3.125rem;
     margin-top: 70px;
     margin-left: 233px;
 }
 
 .descricao-contato {
-    font-size: 19px;
+    font-size: 1.187rem;
     margin-top: 20px;
     margin-left: 233px;
 }
@@ -147,7 +147,7 @@ input {
 }
 
 input::placeholder {
-    font-size: 16px;
+    font-size: 1rem;
     padding-left: 10px;
 }
 
@@ -183,118 +183,45 @@ footer span {
 }
 
 
+@media (max-width: 375px) {
+    .logo {
+        font-size: 1.5rem;
+    }
 
-@media (max-width: 768px) {
+    .icon {
+        width: 25px;
+    }
+
+    main {
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
     .sombra {
+        height: 450px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 
     main p {
-        font-size: 25px;
-        margin: 0px;
-        text-align: center;
+        font-size: 1rem;
+        margin: 0 auto;
     }
-
+    
     main h1 {
-        font-size: 60px;
-        margin: 0px;
         text-align: center;
-        margin-bottom: 50px;
+        font-size: 1.7rem;
+        margin: 0 auto;
     }
 
     .btn-principal {
-        margin: 0px;
-    }
-
-    .iniciativa {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        overflow: hidden;
-     }
-     
-     .titulo {
-        font-size: 40px;
-        margin-top: 20px;
-        margin-left: 25px;
-        margin-bottom: 10px; 
-        width: 100%;
-    }
-    
-     .descricao {
-         font-size: 17px;
-         margin-left: 25px;
-         grid-column: 1;
-         grid-row: 2;
-     }
-     
-     .rapaz {
-         grid-column: 2;
-         width: 250px;
-         margin-top: 40px;
-         margin-left: 20px;
-     }
-     
-     .retangulo {
-       position: absolute;
-       max-width: 100%;
-       margin-top: 285px;
-      
-     }
-
-     .contato {
-         height: 550px;
-     }
-    
-    .titulo-contato {
-        font-size: 40px;
-        width: 90%;
-        margin: 30px auto;
-        text-align: center;
-    }
-    
-    .descricao-contato {
-        font-size: 19px;
-        margin-top: 10px;
-        margin-left: 10px;
-        text-align: center;
-    }
-
-    form {
-        margin-top: 37px;
-        margin-left: 10px;
-        position: relative;
-        text-align: center;
-    }
-    
-    label {
-        position: relative;
-        display: block;
-        margin-bottom: 20px;
-    }
-    
-    input {
-        display: block;
+        padding: 10px 30px;
         margin: 0 auto;
-        margin-bottom: 10px;
-    }
-
-    button {
-        width: 338px;
-        height: 60px;
-    }
-}
-
-
-@media (min-width: 375px) and (max-width: 425px){
-    main p {
-        font-size: 20px;
-    }
-
-    main h1 {
-        font-size: 35px;
+        margin-top: 20px;
     }
 
     .iniciativa {
@@ -303,37 +230,315 @@ footer span {
      }
      
      .titulo {
-        font-size: 35px;
-        grid-column: 1;
+         font-size: 1.7rem;
+         grid-column: 1;
+         grid-row: 1;
+         text-align: center;
+         margin: 0;
+         margin-top: 20px;
+     }
+     
+     .descricao {
+         font-size: .8rem;
+         grid-column: 1;
+         padding: 10px;
+         margin: 0;
+     }
+     
+     .rapaz {
+         grid-column: 1;
+         max-width: 70%;
+         margin: 0 auto;
+     }
+     
+     .retangulo {
+        position: relative;
+        max-width: 100%;
+        margin-top: -40px;
+ }
+
+     .contato {
+        height: 350px;
+    }
+    
+    .titulo-contato {
+        font-size: 1.7rem;
         text-align: center;
+        margin: 40px 0px 10px 0px;
+    }
+    
+    .descricao-contato {
+        font-size: .8rem;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    form {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    label {
+        font-size: 1rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    input {
+        width: 250px;
+        height: 30px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+        
+    button {
+        
+        width: 250px;
+        height: 30px;
+        font-size: 1rem;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        width: 25px;
+    }
+
+
+    main {
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sombra {
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    main p {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+    
+    main h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+
+    .btn-principal {
+        padding: 10px 30px;
         margin: 0 auto;
         margin-top: 20px;
     }
-    
-     .descricao {
-         font-size: 17px;
+
+
+    .iniciativa {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+     
+     .titulo {
+         font-size: 1.7rem;
          text-align: center;
+         margin: 0 auto;
+     }
+     
+    .descricao {
+         font-size: .8rem;
+         width: 90%;
          margin: 0 auto;
      }
      
      .rapaz {
          grid-column: 1;
+         max-width: 70%;
          margin: 0 auto;
-     }
-     
-     .retangulo {
-       margin-top: 438px;
-     }
-
-     .titulo-contato {
-        font-size: 35px;
-        text-align: center;
-        margin-top: 30px;
+    }
+        
+    .retangulo {
+        position: relative;
+        max-width: 100%;
+        margin-top: -40px;
     }
 
+    .contato {
+        height: 350px;
+    }
+    
+    .titulo-contato {
+        font-size: 1.7rem;
+        text-align: center;
+        margin: 40px 0px 10px 0px;
+    }
+    
+    .descricao-contato {
+        font-size: .8rem;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    form {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    label {
+        font-size: 1rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    input {
+        width: 250px;
+        height: 30px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+        
     button {
+        
+        width: 250px;
+        height: 30px;
+        font-size: 1rem;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    main {
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sombra {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    main p {
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    
+    main h1 {
+        text-align: center;
+        font-size: 3rem;
         margin: 0 auto;
     }
 
-}
+    .btn-principal {
+        padding: 10px 40px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 
+    .iniciativa {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+     }
+     
+     .titulo {
+         font-size: 3rem;
+         text-align: center;
+         margin: 0 auto;
+    }
+     
+     .descricao {
+         font-size: 1rem;
+         width: 90%;
+         margin: 0 auto;
+     }
+     
+     .rapaz {
+         grid-column: 1;
+         max-width: 50%;
+         margin: 0 auto;
+    }
+        
+      .retangulo {
+        position: relative;
+        max-width: 100%;
+        margin-top: -40px;
+     }
+
+     .contato {
+        height: 350px;
+    }
+    
+    .titulo-contato {
+        font-size: 3rem;
+        text-align: center;
+        margin: 40px 0px 10px 0px;
+    }
+    
+    .descricao-contato {
+        font-size: 1rem;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    form {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    label {
+        font-size: 1rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    input {
+        width: 250px;
+        height: 30px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+        
+    button {
+        
+        width: 250px;
+        height: 30px;
+        font-size: 1rem;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: inline-block;
+    }
+}
