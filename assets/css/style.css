@@ -145,11 +145,12 @@ input {
     border: 1px solid #CDCDCD;
     border-radius: 8px;
     margin-top: 20px;
+    font-size: 1rem;
+    padding-left: 8px;
 }
 
 input::placeholder {
     font-size: 1rem;
-    padding-left: 10px;
 }
 
 input:focus {
